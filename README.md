@@ -10,7 +10,18 @@ This plugin adds support for Readline text-editing shortcuts in Neovim in Insert
 
 ## Quick start
 
-Install readline.nvim using [vim-plug](https://github.com/junegunn/vim-plug) with `Plug 'linty-org/readline.nvim'`, or use your favorite Neovim plugin manager. Requires at least Neovim 0.7.
+For LazyVim installation use:
+
+````
+return {
+  { "maitra/readline.nvim" },
+  { "LazyVim/LazyVim", opts = {} },
+}
+
+````
+
+
+Install readline.nvim using [vim-plug](https://github.com/junegunn/vim-plug) with `Plug 'maitra/readline.nvim'`, or use your favorite Neovim plugin manager. Requires at least Neovim 0.7.
 
 Then add the following code block to your `init.lua` to enable some of the most-useful Readline shortcuts in Insert and Command-line mode, for moving or deleting by a word at a time, or to beginning/end-of-line.
 ```lua
